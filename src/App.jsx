@@ -1,7 +1,11 @@
 import React from 'react'
 
 function App() {
-  return <div>React Mobile Menu</div>
+  return (
+    <div>
+      <i className="fas fa-bars"></i>
+    </div>
+  )
 }
 
 export default App
