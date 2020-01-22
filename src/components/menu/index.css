@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+}
+
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-items {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  list-style: none;
+  margin-top: 50px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #555;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}

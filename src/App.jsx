@@ -1,9 +1,11 @@
 import React from 'react'
+import Menu from './components/menu'
+import { menuData } from './menu-data'
 
 function App() {
   return (
     <div>
-      <i className="fas fa-bars"></i>
+      <Menu menuData={menuData} />
     </div>
   )
 }
