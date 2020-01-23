@@ -21,8 +21,8 @@ class Menu extends React.PureComponent {
 
     return (
       <div className="container">
-        <div className="menu-button" onClick={this.toggleMenu}>
-          {isMenuOpen ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+        <div className={`icon ${isMenuOpen ? 'active' : ''}`} onClick={this.toggleMenu}>
+          <div className="hamburger"></div>
         </div>
 
         {/* Topbar */}

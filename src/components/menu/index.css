@@ -2,13 +2,56 @@
   position: relative;
 }
 
-.menu-button {
+.icon {
   position: absolute;
   top: 30px;
   right: 30px;
   z-index: 999;
-  font-size: 30px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
+}
+
+.hamburger {
+  width: 37px;
+  height: 4px;
+  border-radius: 2px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  transition: .5s;
+}
+.hamburger:before, .hamburger:after {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 4px;
+  border-radius: 2px;
+  background: #333;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  transition: .5s;
+}
+.hamburger:before {
+  top: -12px;
+}
+.hamburger:after {
+  top: 12px;
+}
+
+.icon.active .hamburger {
+  background: transparent;
+  box-shadow: none;
+}
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(135deg);
 }
 
 .nav {
