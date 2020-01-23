@@ -25,7 +25,6 @@ class Menu extends React.PureComponent {
           <div className="hamburger"></div>
         </div>
 
-        {/* Topbar */}
         {menuData.length && (
           <nav className={`nav ${isMenuOpen ? 'show' : ''}`}>
             <ul className="menu-items">
